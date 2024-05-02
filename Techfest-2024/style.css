@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    border:border-box;
+}
+body{
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  flex-wrap: wrap;
+}
+.topnav {
+    background-color: #1b1a54;
+    overflow: hidden;
+    text-align: center!important;
+    position :fixed;
+    width:100%;
+    padding-top: 15px;
+    border-top: 1px solid #f0e9ff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .topnav a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .topnav a:hover {
+    color: #a1181b;;
+  }
+  .home{
+    background-image: url("bg.png.png");
+    height:100%;
+    width:100%;
+    background-size: cover;
+    
+  }
+  .home_container{
+    padding-left: 25rem;
+    padding-top: 0.1rem;
+    padding-right:10rem ;
+    padding-bottom: 1rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container_img{
+    /* background-image: url("main_logo.png"); */
+    width: 700px;
+    aspect-ratio: auto 600 / 500;
+    height: 600px;
+    background-size: cover;
+    vertical-align: middle;
+    border-style: none;
+    align-items: center;
+    visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInLeft;
+    
+  }
+  .container_img img{
+    height:100%;
+    width:100%;
+    margin-top: 50px;
+  }
+/* Define a keyframe animation named fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in-element {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  opacity: 1;
+
+}
+ .home_text p{
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight:700;
+    color: #a1181b;
+    padding-left: 10rem;
+    padding-top: 0.1rem;
+    padding-right:10rem ;
+    padding-bottom: 1rem;
+    transition-timing-function: ease-in;
+    margin-top: 50px;
+    line-height: 0.5px;
+    /* font-family: "Segoe UI","Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+  }
+ 
+.about{
+  background-color:#bce1ea ;
+  height:100%;
+  width: 100%;
+}
+.about_container{
+  display:flex;
+
+}
+ .about_title {
+  font-size: 50px;
+  font-weight: 900;
+  position: relative;
+  text-align: center !important;
+  z-index: 0;
+  padding-bottom: 7px; 
+ }
+  .about_text{
+    color: #04032d;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-family: "Muli", sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+}
+.about_p,.about_sc{
+  text-align: center !important;
+  color:black;
+}
+.about_fac{
+  display:flex;
+  color: black;
+}
+.about_sw,.about_tg{
+  height:100%;
+  width:100%;
+}
+.about_bj,.about_dm{
+  margin-left: 500px;
+  height:100%;
+  width:100%;
+
+}
+.about_p_posts{
+  color:#a1181b;
+  line-height: 0%;
+  font-weight:700
+
+}
+.about_video{
+  scroll-snap-align: start;
+  padding-bottom: 3px;
+  height:40px; 
+  margin-top: 100px;
+}
+ .events_title{
+  font-size: 36px;
+  font-weight: 400;
+  color: #a1181b;
+  text-align: center !important;
+ }
+.events{
+  background-image: url("vnetch tecnology (Website).png");
+  height:100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.expandable-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.events_head{
+  font-size: 50px;
+  font-weight: 900;
+  position: relative;
+  text-align: center !important;
+  z-index: 0;
+  padding-bottom: 7px; 
+}
+.events_title{
+  font-size: 30px;
+  font-weight: 600;
+  color: #a1181b;
+  font-family: "Anton", sans-serif;
+  margin-bottom: 0;
+}
+.events_cards{
+  /* height: 900px;
+  width:100%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 5px 50px 5px;
+  }
+    
+ .liveludo{
+  transition: transform 0.3s ease;
+ } 
+  .liveludo:hover{
+    will-change: transform;
+    transform: perspective(300px) rotateX(0.73deg) rotateY(4.85deg) scale3d(1, 1, 1)
+ 
+  }
+ 
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
+  border-radius: 18px;
+  margin: 20px;
+}
+
+.sponsors{
+  background-image: url("bg.png.png");
+  height:1080px;
+  width:100%;
+  background-size: cover;
+}
+.sponsors_all{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 5px 50px 5px;
+}
+.sponsors_head h3{
+  font-size: 50px;
+  font-weight: 900;
+  position: relative;
+  text-align: center !important;
+  z-index: 0;
+  padding-bottom: 7px; 
+}
+/* .border{
+  border:3px solid transparent;
+}
+.border:hover{
+  border:3px solid black;
+} */
+.sponsor_text{
+  color:#04032d;
+  font-size: 24px;
+  line-height: 1.2em;
+  padding-left: 3rem;
+  border:none;
+
+}
+.sponsor_skillset{
+  margin:20px;
+}
+.sponsor_skillset img {
+  width: 280px;
+  height: 150px;
+  object-fit: contain;
+  margin: 5px 10px 20px 10px;
+  padding: 2px;
+  border:none;
+}
+.contact{
+  background-color:#bce1ea ;
+  height:600px;
+  width: 100%;
+  text-align: center!important;
+
+}
+.contact h4{
+  font-size: 50px;
+  font-weight: 900;
+  position: relative;
+  text-align: center !important;
+  z-index: 0;
+  padding-bottom: 7px; 
+} 
+.contact_p1{
+  margin-top: 25px;
+   margin-bottom: 41px;
+  font-size: 20px;
+  color: #2b2d2f;
+  line-height: 32px;
+  font-weight: 400;
+}
+.contact_p2{
+  color: #a1181b;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.contact_p3 a{
+  color:#04032d;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  text-decoration:none;
+
+}
+.contact_p3 a:hover{
+  text-decoration:none;
+}
+.boxed-btn3 {
+  line-height: 32px;
+  background: #FF4533;
+  color: #fff;
+  display: inline-block;
+  padding: 14px 35px;
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: 0;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.contact h3{
+  padding:32px;
+}
+.contact_p4{
+  font-size: 20px;
+  padding-top: 20px;
+  color:#2b2d2f;
+  padding-bottom: 0px;
+}
